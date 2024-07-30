@@ -1,4 +1,4 @@
-package b.practiseprograms;
+package programs.praticals;
 
 public class FindMissingNumberFromArray {
 

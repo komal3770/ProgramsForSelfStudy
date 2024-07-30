@@ -1,4 +1,4 @@
-package b.practiseprograms;
+package programs.praticals;
 /**
  * @author komal
  * Program to find larget & second-largest integer from an given array
