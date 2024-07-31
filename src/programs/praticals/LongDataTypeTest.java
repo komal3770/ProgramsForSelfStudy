@@ -1,6 +1,6 @@
 package programs.praticals;
 
-public class LongTest {
+public class LongDataTypeTest {
   static char s;
 
   public static void main(String[] args) {
@@ -10,6 +10,6 @@ public class LongTest {
     System.out.println(longWithL);
     System.out.println(longWithoutL);
 
-    System.out.println(LongTest.s);
+    System.out.println(LongDataTypeTest.s);
   }
 }

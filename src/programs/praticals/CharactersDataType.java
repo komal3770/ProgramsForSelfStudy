@@ -1,6 +1,6 @@
 package programs.praticals;
 
-public class UnderScore {
+public class CharactersDataType {
 
   public static void main(String[] args) {
     System.out.println('j' + 'a' + 'v' + 'a');

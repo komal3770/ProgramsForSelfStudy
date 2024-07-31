@@ -15,7 +15,7 @@ class AAA {
   }
 }
 
-class BBB extends AAA {
+class BBB extends ParentClass {
 
   BBB() {
     System.out.println("BBB Dfault");
@@ -33,10 +33,10 @@ class BBB extends AAA {
 
 public class InstanceOfTestInInheritance {
   public static void main(String[] args) {
-    AAA b = new BBB("BBB");
+    ParentClass b = new BBB("BBB");
     BBB b2 = new BBB("BBB");
-    AAA b3 = new BBB();
-    System.out.println(b instanceof AAA);
+    ParentClass b3 = new BBB();
+    System.out.println(b instanceof ParentClass);
     System.out.println(b instanceof BBB);
   }
 }

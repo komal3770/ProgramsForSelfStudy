@@ -1,4 +1,4 @@
-package programs.praticals;
+package oops.inheritence;
 
 class AA {
   protected String name = "AA";
@@ -10,7 +10,7 @@ class BB extends AA {
   }
 }
 
-public class OverridenMethodTest {
+public class ProtectedAccessModifierTest {
 
   public static void main(String[] args) {
     new BB().printName();

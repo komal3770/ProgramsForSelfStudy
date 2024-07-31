@@ -1,4 +1,4 @@
-package programs.praticals;
+package oops.inheritence;
 
 class Test1 {}
 
@@ -10,7 +10,7 @@ class TestC extends Test1 {}
 
 class TestD extends TestC {}
 
-public class InheritenceTest {
+public class InheritanceTest {
 
   public static void main(String[] args) {
     Test1 t1 = new Test1();

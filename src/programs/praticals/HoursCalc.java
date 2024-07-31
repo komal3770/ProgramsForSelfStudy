@@ -12,6 +12,7 @@ public class HoursCalc {
     Calendar curr = Calendar.getInstance();
     curr.set(Calendar.HOUR_OF_DAY, 15);
     curr.set(Calendar.MINUTE, 16);
+
     long difference = curr.getTime().getTime() - inTime.getTime().getTime();
     long hr = difference / (60 * 60 * 1000) % 24;
     long min = difference / (60 * 1000) % 60;
