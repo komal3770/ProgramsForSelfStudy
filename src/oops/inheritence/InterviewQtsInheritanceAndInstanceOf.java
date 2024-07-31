@@ -4,14 +4,14 @@ package oops.inheritence;
  * Inherited class object test
  */
 
-class Parent4{
+class ParentTest {
 	int i;
 	void display(int i) {
 		i=10;
 		System.out.println(this.i);
 	}
 }
-class Child4 extends Parent4{
+class ChildTest extends ParentTest {
 	int j;
 	void display(int j) {
 		System.out.println("Child "+j);
@@ -19,10 +19,10 @@ class Child4 extends Parent4{
 }
 
 
-public class Test4 {
+public class InterviewQtsInheritanceAndInstanceOf {
 
 	public static void main(String[] args) {
-		Parent4 child = new Parent4();
+		ParentTest child = new ParentTest();
 		child.i = 1;
 		//child.j = 2;
 		child.display(2);

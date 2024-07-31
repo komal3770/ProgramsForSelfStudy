@@ -30,7 +30,7 @@ class BBB extends AAA{
 }
 
 
-public class Test3 {
+public class InstanceOfTestInInheritance {
 	public static void main(String[] args) {
 		AAA b = new BBB("BBB");
 		BBB b2 = new BBB("BBB");
