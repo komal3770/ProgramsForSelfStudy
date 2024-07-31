@@ -3,8 +3,8 @@ package programs.praticals;
 import java.util.Scanner;
 
 /*
-* Problem statement: https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem
-* */
+ * Problem statement: https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem
+ * */
 public class JumpingClouds {
   private static final Scanner scanner = new Scanner(System.in);
 

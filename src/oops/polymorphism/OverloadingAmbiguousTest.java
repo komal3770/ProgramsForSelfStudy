@@ -16,16 +16,16 @@ public class OverloadingAmbiguousTest {
     System.out.println("String Constructor");
   }
 
+  public static void main(String[] args) {
+    OverloadingAmbiguousTest a = new OverloadingAmbiguousTest(null); // Try it
+    a.test(null);
+  }
+
   public void test(String s) {
     System.out.println("String method");
   }
 
   public void test(Object s) {
     System.out.println("Object method");
-  }
-
-  public static void main(String[] args) {
-    OverloadingAmbiguousTest a = new OverloadingAmbiguousTest(null);//Try it
-    a.test(null);
   }
 }

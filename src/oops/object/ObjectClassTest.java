@@ -9,22 +9,33 @@ public class ObjectClassTest {
 	private String y;
 	private boolean z;
 
+	public static void main(String[] args) {
+		ObjectClassTest test1 = new ObjectClassTest();
+		ObjectClassTest test2 = new ObjectClassTest();
+		System.out.println(test1.hashCode() == test2.hashCode());
+		System.out.println(test1.equals(test2));
+	}
 
 	public int getX() {
 		return x;
 	}
+
 	public void setX(int x) {
 		this.x = x;
 	}
+
 	public String getY() {
 		return y;
 	}
+
 	public void setY(String y) {
 		this.y = y;
 	}
+
 	public boolean isZ() {
 		return z;
 	}
+
 	public void setZ(boolean z) {
 		this.z = z;
 	}
@@ -39,6 +50,7 @@ public class ObjectClassTest {
 		System.out.println(STR."Hashcode result \{result}");
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -60,27 +72,21 @@ public class ObjectClassTest {
 		return true;
 	}
 
-
-
 	@Override
 	protected ObjectClassTest clone() throws CloneNotSupportedException {
 		ObjectClassTest obj = this;
 		return obj;
 	}
+
 	@Override
 	public String toString() {
 		return super.toString();
 	}
+
 	@Override
 	protected void finalize() throws Throwable {
 		System.out.println("Finalize called.");
 		super.finalize();
-	}
-	public static void main(String[] args) {
-		ObjectClassTest test1 = new ObjectClassTest();
-		ObjectClassTest test2 = new ObjectClassTest();
-		System.out.println(test1.hashCode() == test2.hashCode());
-		System.out.println(test1.equals(test2));
 	}
 
 }
